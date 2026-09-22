@@ -1,3 +1,17 @@
-plugins {
-    id 'com.android.application' version '8.5.2' apply false
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.chickubrowser'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.chickubrowser'
+        minSdk 23
+        targetSdk 35
+        versionCode 2
+        versionName '2.0'
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
 }
